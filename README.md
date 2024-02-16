@@ -1,26 +1,41 @@
 # reward_ensembles
 
-TODO(b/322828293): Add a description for your new project, explain what is
-being released here, etc... Additional, the following sections are normally
-expected for all releases. Feel free to add additional sections if appropriate
-for your project.
+This repository accompanies  the pre-print
+> Eisenstein, J. et al. [Helping or Herding? Reward Model Ensembles Mitigate but do not Eliminate Reward Hacking](https://arxiv.org/abs/2312.09244). (2023)
 
-## Installation
+The repository contains links to pretrained checkpoints used in the
+above manuscript. Specifically, we pre-train encoder-decoder models, following
+precisely the procedure that was used to generate the checkpoints [in the original T5 paper (Raffel et al.)](https://github.com/google-research/text-to-text-transfer-transformer?tab=readme-ov-file#released-model-checkpoints). Importantly, we pre-train five
+times, changing only the random seed, which controls the initialization of
+parameters and sample of data from C4 used for pretraining.
 
-Write instructions for how the user should install your code. The instructions
-should ideally be valid when copy-pasted. You can combine this with the Usage
-section if there's no separate installation step.
+These checkpoints can be useful for creating ensembles (as we did in the above manuscript), analyzing differences between different pretrain checkpoints that were trained using the same procedure, estimating uncertainty, etc.
 
-## Usage
 
-Write example usage of your code. The instructions should ideally be valid when
-copy-pasted, and will be used by your technical reviewer to verify that your
-package functions correctly.
+We release 15 checkpoints, five for T5-base models, five for T5-large models, and five for T5-XL models.
+
+## Checkpoints
+
+Download the checkpoints from:
+
+| Model | GCS Path |
+|---|---|
+| T5-base | gs://bucket/path/to/model_1 |
+| T5-large | gs://bucket/path/to/model_2 |
+| T5-XL | gs://bucket/path/to/model_3 |
 
 ## Citing this work
 
-Add citation details here, usually a pastable BibTeX snippet.
+If you use the checkpoints, please cite:
 
+```bibtex
+@article{eisenstein2023helping,
+  author = {Jacob Eisenstein and Chirag Nagpal and Alekh Agarwal and Ahmad Beirami and Alex D'Amour and DJ Dvijotham and Adam Fisch and Katherine Heller and Stephen Pfohl and Deepak Ramachandran and Peter Shaw and Jonathan Berant},
+  journal = {arXiv preprint arXiv:2312.09244},
+  title = {Helping or Herding? Reward Model Ensembles Mitigate but do not Eliminate Reward Hacking},
+  year = {2023},
+}
+```
 ## License and disclaimer
 
 Copyright 2024 DeepMind Technologies Limited
