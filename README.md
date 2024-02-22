@@ -16,13 +16,13 @@ We release 15 checkpoints, five for T5-base models, five for T5-large models, an
 
 ## Checkpoints
 
-Download the checkpoints from:
+Download the checkpoints from here. Each GCS path contains five directories each corresponding to a different pretrained model.
 
 | Model | GCS Path |
 |---|---|
-| T5-base | gs://bucket/path/to/model_1 |
-| T5-large | gs://bucket/path/to/model_2 |
-| T5-XL | gs://bucket/path/to/model_3 |
+| T5-base | gs://reward_ensembles/base |
+| T5-large | gs:/reward_ensembles/large |
+| T5-XL | gs://reward_ensembles/xl |
 
 ## Citing this work
 
