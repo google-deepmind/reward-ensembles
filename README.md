@@ -1,4 +1,4 @@
-# reward_ensembles
+# Reward Ensembles
 
 This repository accompanies  the pre-print
 > Eisenstein, J. et al. [Helping or Herding? Reward Model Ensembles Mitigate but do not Eliminate Reward Hacking](https://arxiv.org/abs/2312.09244). (2023)
