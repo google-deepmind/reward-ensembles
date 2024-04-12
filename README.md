@@ -20,9 +20,9 @@ Download the checkpoints from here. Each GCS path contains five directories each
 
 | Model | GCS Path |
 |---|---|
-| T5-base | `gs://reward_ensembles/base` |
-| T5-large | `gs://reward_ensembles/large` |
-| T5-XL | `gs://reward_ensembles/xl` |
+| T5-base | [gs://reward_ensembles/base](https://console.cloud.google.com/storage/browser/reward_ensembles/base) |
+| T5-large | [gs://reward_ensembles/large](https://console.cloud.google.com/storage/browser/reward_ensembles/large) |
+| T5-XL | [gs://reward_ensembles/xl](https://console.cloud.google.com/storage/browser/reward_ensembles/xl) |
 
 ## Citing this work
 
