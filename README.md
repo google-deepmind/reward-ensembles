@@ -21,7 +21,7 @@ Download the checkpoints from here. Each GCS path contains five directories each
 | Model | GCS Path |
 |---|---|
 | T5-base | `gs://reward_ensembles/base` |
-| T5-large | `gs:/reward_ensembles/large` |
+| T5-large | `gs://reward_ensembles/large` |
 | T5-XL | `gs://reward_ensembles/xl` |
 
 ## Citing this work
